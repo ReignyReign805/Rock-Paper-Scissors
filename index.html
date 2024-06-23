@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <script src="rps.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   
+    <div class="body">
+    <h1 class="title">ROCK-PAPER-SCISSORS</h1>    
+        <div class="player_div">  
+            <div class="images_div">
+                <div class="rock_div">
+                    <img src="images/rock.png" id="Rock" alt="Rock" class="rock-human">
+                    <p>Rock</p>
+                </div>
+                <div class="paper_div">
+                    <img src="images/paper.png" id="Paper" alt="Paper" class="paper-human">
+                    <p>Paper</p>
+                </div>
+                <div class="scissors_div">
+                    <img src="images/scissors.png" id="Scissors" alt="Scissors" class="sccissors-human">
+                    <p>Scissors</p>
+                </div>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <h3>Score: <span id="humanScore">0</span></h3> 
+        </div>
+        <p class="choice">Player 1: <span id="human_choice"></span></p>
+        <p id="result">THROW YOU FIRST PICK</p>
+        <p class="choice">Player 2: <span id="computer_choice"></span></p>
+        <div class="scoreboard">
+            <h3>Score: <span id="computerScore">0</span></h3>
+        </div>
+
+        <div class="computer_div">
+            <div class="images_div">
+                <div class="rock_div">
+                    <img src="images/rockcomp.png" alt="" class="rock-human">
+                    <p>Rock</p>
+                </div>
+                <div class="paper_div">
+                    <img src="images/papercomp.png" alt="" class="paper-human">
+                    <p>Paper</p>
+                </div>
+                <div class="scissors_div">
+                    <img src="images/scissorscomp.png" alt="" class="sccissors-human">
+                    <p>Scissors</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="restart_div">
+            <button id="restartBtn">Restart Game</button>
+        </div>
+    </div>
 </body>
 </html>
